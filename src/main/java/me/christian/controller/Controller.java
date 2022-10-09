@@ -1,12 +1,18 @@
 package me.christian.controller;
 
-import spark.Route;
+public abstract class Controller {
 
-public interface Controller {
+    protected String identifier;
 
-    void get(String path, Route route);
-    void post(String path, Route route);
-    void put(String path, Route route);
-    void delete(String path, Route route);
+    protected Controller(String identifier) {
+        this.identifier = identifier;
+    }
+
+    protected abstract void establishRoutes();
+
+    public void initialize() {
+        establishRoutes();
+        System.out.printf("%s has been initialized.%n", identifier);
+    }
 
 }
