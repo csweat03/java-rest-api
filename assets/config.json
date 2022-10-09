@@ -1,0 +1,8 @@
+{
+  "mongodb": {
+    "username": "api_user",
+    "password": "LJNV36CSsYWCDeaw",
+    "cluster": "javarestapi.tsw5tbn",
+    "params": "retryWrites=true&w=majority"
+  }
+}
