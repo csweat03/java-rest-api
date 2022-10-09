@@ -17,6 +17,6 @@ public class ControllerFactory extends Factory<Controller> {
 
     @Override
     protected void execute() {
-
+        getImplementations().forEach(Controller::initialize);
     }
 }
