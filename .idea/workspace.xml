@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2490fd65-400f-4705-8bb8-fbf08bdb6cd7" name="Changes" comment="Added ControllerFactory reference and initialization call.">
-      <change afterPath="$PROJECT_DIR$/assets/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/interfaces/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/utility/FileUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/utility/JSONUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/utility/MongoUtility.java" afterDir="false" />
+    <list default="true" id="2490fd65-400f-4705-8bb8-fbf08bdb6cd7" name="Changes" comment="Changed ControllerFactory.java, initialized all Controller.java classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/controller/implementation/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/controller/implementation/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/factory/implementation/ControllerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/factory/implementation/ControllerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/utility/MongoUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/utility/MongoUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,49 @@
       <option name="project" value="LOCAL" />
       <updated>1664914682483</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added FileUtility.java, Added JSONUtility.java, Added config.json">
+      <created>1665353457597</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665353457597</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added MongoDatabase Driver + MongoUtility.java, Configured MongoDB">
+      <created>1665353554818</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665353554818</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added GET POST PUT DELETE for ProjectController.java">
+      <created>1665353625501</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665353625501</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added ConfigFile Reference, GSON Reference, MongoDB Testing Function">
+      <created>1665353674628</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665353674628</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changed Controller.java, removed redundant messages, added establishRoutes">
+      <created>1665353724592</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665353724592</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changed ControllerFactory.java, initialized all Controller.java classes">
+      <created>1665353758664</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665353758664</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,7 +163,13 @@
     <MESSAGE value="Created Factory.java" />
     <MESSAGE value="Created ControllerFactory.java an extension of Factory.java" />
     <MESSAGE value="Added ControllerFactory reference and initialization call." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ControllerFactory reference and initialization call." />
+    <MESSAGE value="Added FileUtility.java, Added JSONUtility.java, Added config.json" />
+    <MESSAGE value="Added MongoDatabase Driver + MongoUtility.java, Configured MongoDB" />
+    <MESSAGE value="Added GET POST PUT DELETE for ProjectController.java" />
+    <MESSAGE value="Added ConfigFile Reference, GSON Reference, MongoDB Testing Function" />
+    <MESSAGE value="Changed Controller.java, removed redundant messages, added establishRoutes" />
+    <MESSAGE value="Changed ControllerFactory.java, initialized all Controller.java classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed ControllerFactory.java, initialized all Controller.java classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

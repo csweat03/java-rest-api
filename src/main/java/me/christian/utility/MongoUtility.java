@@ -9,7 +9,7 @@ import me.christian.App;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class MongoUtility {
-    public MongoDatabase establishDatabaseConnection(String databaseName) {
+    public static MongoDatabase establishDatabaseConnection(String databaseName) {
         AtomicReference<MongoDatabase> database = new AtomicReference<>();
 
         JSONUtility.execute("mongodb", value -> {
