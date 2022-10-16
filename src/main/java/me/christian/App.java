@@ -7,6 +7,7 @@ import me.christian.factory.implementation.ControllerFactory;
 import me.christian.utility.FileUtility;
 import me.christian.utility.MongoUtility;
 import org.bson.Document;
+import spark.Spark;
 
 import java.io.BufferedReader;
 import java.util.Iterator;
@@ -28,10 +29,13 @@ public class App
 
     public static void main( String[] args )
     {
+        Spark.port(8080);
         // Landing Page
         get("/", (req, res) -> "Hello World! Try navigating to /(project name)/(class name)");
 
         CONTROLLER_FACTORY.initialize();
+
+        System.out.println("Access the API on http://localhost:8080/");
     }
 
     public static BufferedReader getConfigReader() {
