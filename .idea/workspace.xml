@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2490fd65-400f-4705-8bb8-fbf08bdb6cd7" name="Changes" comment="Changed ControllerFactory.java, initialized all Controller.java classes">
+    <list default="true" id="2490fd65-400f-4705-8bb8-fbf08bdb6cd7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/application/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/application/implementation/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/controller/implementation/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/christian/utility/CryptographyUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/controller/implementation/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/controller/implementation/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/utility/MongoUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/utility/MongoUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/christian/factory/implementation/ControllerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/christian/factory/implementation/ControllerFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,6 +53,11 @@
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.christian.application" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -142,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665353758664</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Functional GET Request for /projects and /project/:name for ProjectController.java">
+      <created>1665415889003</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665415889003</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,7 +185,8 @@
     <MESSAGE value="Added ConfigFile Reference, GSON Reference, MongoDB Testing Function" />
     <MESSAGE value="Changed Controller.java, removed redundant messages, added establishRoutes" />
     <MESSAGE value="Changed ControllerFactory.java, initialized all Controller.java classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed ControllerFactory.java, initialized all Controller.java classes" />
+    <MESSAGE value="Added Functional GET Request for /projects and /project/:name for ProjectController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Functional GET Request for /projects and /project/:name for ProjectController.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
