@@ -21,7 +21,9 @@ public class App
     private final static String CONFIG_FILE = "assets\\config.json";
     private final static BufferedReader READER = FileUtility.instantiateNewReader(CONFIG_FILE);
     private final static Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private final static MongoDatabase MONGODB_PROJECT_DB = MongoUtility.establishDatabaseConnection("projectdb");
+    private final static MongoDatabase
+            MONGODB_USER_DB = MongoUtility.establishDatabaseConnection("userdb"),
+            MONGODB_PROJECT_DB = MongoUtility.establishDatabaseConnection("projectdb");
     private final static ControllerFactory CONTROLLER_FACTORY = new ControllerFactory();
 
     public static void main( String[] args )
@@ -40,6 +42,9 @@ public class App
         return GSON;
     }
 
+    public static MongoDatabase getUserDatabase() {
+        return MONGODB_USER_DB;
+    }
     public static MongoDatabase getProjectDatabase() {
         return MONGODB_PROJECT_DB;
     }
