@@ -2,6 +2,7 @@ package me.christian.factory.implementation;
 
 import me.christian.controller.Controller;
 import me.christian.controller.implementation.ProjectController;
+import me.christian.controller.implementation.UserController;
 import me.christian.factory.Factory;
 
 public class ControllerFactory extends Factory<Controller> {
@@ -12,7 +13,7 @@ public class ControllerFactory extends Factory<Controller> {
 
     @Override
     protected void populate() {
-        add(new ProjectController());
+        add(new UserController(), new ProjectController());
     }
 
     @Override
