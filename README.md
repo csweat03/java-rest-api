@@ -1,6 +1,9 @@
 # Java Rest API
 
 This is a Java Server Application with a functional REST API, this project depends on the following: [junit, slf4j, sparkjava, mongodb, gson]
+This application uses SparkJava to create REST API handlers for various implementations such as users and projects.
+This also instantiates a connection to a MongoDB Database and talks back and forth to sync data during various steps in the process.
+Additionally, I used gson to process configuration input in the config.json file that can be found in the 'resources/json/' directory.
 
 ## Authors
 
