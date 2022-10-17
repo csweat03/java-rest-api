@@ -4,13 +4,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mongodb.client.MongoDatabase;
 import me.christian.factory.implementation.ControllerFactory;
-import me.christian.utility.FileUtility;
 import me.christian.utility.MongoUtility;
-import org.bson.Document;
 import spark.Spark;
 
 import java.io.BufferedReader;
-import java.util.Iterator;
+import java.io.InputStreamReader;
+import java.util.Objects;
 
 import static spark.Spark.get;
 
@@ -19,19 +18,23 @@ import static spark.Spark.get;
  */
 public class App 
 {
-    private final static String CONFIG_FILE = "assets\\config.json";
-    private final static BufferedReader READER = FileUtility.instantiateNewReader(CONFIG_FILE);
-    private final static Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private final static MongoDatabase
-            MONGODB_USER_DB = MongoUtility.establishDatabaseConnection("userdb"),
-            MONGODB_PROJECT_DB = MongoUtility.establishDatabaseConnection("projectdb");
-    private final static ControllerFactory CONTROLLER_FACTORY = new ControllerFactory();
+    private static BufferedReader READER;
+    private static Gson GSON;
+    private static MongoDatabase MONGODB_USER_DB, MONGODB_PROJECT_DB;
+    private static ControllerFactory CONTROLLER_FACTORY;
 
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
+        READER = new BufferedReader(new InputStreamReader(Objects.requireNonNull(App.class.getClassLoader().getResourceAsStream("json/config.json"))));
+
+        GSON = new GsonBuilder().setPrettyPrinting().create();
+        MONGODB_USER_DB = MongoUtility.establishDatabaseConnection("userdb");
+        MONGODB_PROJECT_DB = MongoUtility.establishDatabaseConnection("projectdb");
+
+        CONTROLLER_FACTORY = new ControllerFactory();
+
         Spark.port(8080);
         // Landing Page
-        get("/", (req, res) -> "Hello World! Try navigating to /(project name)/(class name)");
+        get("/", (req, res) -> "Hello World! Try navigating to api/(project name)/(class name)");
 
         CONTROLLER_FACTORY.initialize();
 
@@ -52,4 +55,5 @@ public class App
     public static MongoDatabase getProjectDatabase() {
         return MONGODB_PROJECT_DB;
     }
+
 }

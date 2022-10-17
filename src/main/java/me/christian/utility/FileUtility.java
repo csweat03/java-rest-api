@@ -9,7 +9,7 @@ public class FileUtility {
 
     public static BufferedReader instantiateNewReader(String fileName) {
         try {
-            return new BufferedReader(new FileReader(fileName));
+            return new BufferedReader(new FileReader(System.getProperty("user.dir") + File.separator + fileName));
         } catch (FileNotFoundException fileNotFoundException) {
             throw new RuntimeException(fileNotFoundException);
         }
@@ -17,7 +17,7 @@ public class FileUtility {
 
     public static BufferedWriter instantiateNewWriter(String fileName) {
         try {
-            return new BufferedWriter(new FileWriter(fileName, true));
+            return new BufferedWriter(new FileWriter(System.getProperty("user.dir") + File.separator + fileName, true));
         } catch (IOException ioException) {
             throw new RuntimeException(ioException);
         }

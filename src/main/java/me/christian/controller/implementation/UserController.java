@@ -22,13 +22,13 @@ public class UserController extends Controller {
 
 
 
-        LinkedHashMap<String, Object> administratorData = new LinkedHashMap<>();
-
-        administratorData.put("username", "csweat03");
-        administratorData.put("password", "password");
-        administratorData.put("role-type", "administrator");
-//        administratorData.put("api-key", new User("your", "mom").generateApiKey());
-
-        usersCollection.insertOne(new Document(administratorData));
+//        LinkedHashMap<String, Object> administratorData = new LinkedHashMap<>();
+//
+//        administratorData.put("username", "csweat03");
+//        administratorData.put("password", "password");
+//        administratorData.put("role-type", "administrator");
+////        administratorData.put("api-key", new User("your", "mom").generateApiKey());
+//
+//        usersCollection.insertOne(new Document(administratorData));
     }
 }
